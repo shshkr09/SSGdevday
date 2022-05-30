@@ -1,3 +1,4 @@
+use appws;
 DELIMITER //
 CREATE OR REPLACE PROCEDURE proc_loanreq(GENERIC_BATCH query(GENERIC_JSON json)) AS
 BEGIN

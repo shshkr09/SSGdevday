@@ -1,2 +1,6 @@
-nohup sh /u01/kaf/kafka-3.1.0-src/bin/zookeeper-server-start.sh config/zookeeper.properties &
-nohup sh /u01/kaf/kafka-3.1.0-src//bin/kafka-server-start.sh config/server.properties &
+#!/bin/bash
+nohup sh $HOME/kafka/bin/zookeeper-server-start.sh $HOME/kafka/config/zookeeper.properties &
+echo "starting  zookeeper"
+sleep 5  
+echo "starting kafka server"
+nohup sh $HOME/kafka/bin/kafka-server-start.sh $HOME/kafka/config/server.properties &

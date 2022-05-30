@@ -1,3 +1,4 @@
+use appws;
 DELIMITER //
 CREATE OR REPLACE PROCEDURE approve_loan(cid int,lid TEXT) AS
 BEGIN
